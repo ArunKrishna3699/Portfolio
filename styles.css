@@ -1,0 +1,336 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .cta-btn {
+    background-color: #00bcd4; /* Soft Teal */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #ff7043; /* Light Coral */
+    transform: scale(1.05);
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b5998; /* Deep Blue */
+    padding: 20px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links li {
+    list-style: none;
+  }
+  
+  .nav-links a {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #00bcd4; /* Soft Teal */
+    transform: scale(1.1);
+  }
+  
+  /* Hero Section */
+  #hero {
+    background: linear-gradient(135deg, #3b5998, #00bcd4); /* Gradient */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    border-bottom: 5px solid #ff7043;
+  }
+  
+  #hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  #hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Section Styles */
+  .section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  /* About Section */
+  #about .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #about .profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #00bcd4; /* Soft Teal Border */
+  }
+  
+  #about .about-text {
+    max-width: 600px;
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* Experience Section */
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .experience-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .experience-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .experience-card h3 {
+    margin-bottom: 10px;
+    color: #3b5998; /* Deep Blue */
+  }
+  
+  .experience-card p {
+    margin-bottom: 10px;
+    color: #00bcd4; /* Soft Teal */
+  }
+  
+  .experience-card ul li {
+    margin-bottom: 8px;
+    color: #666;
+  }
+  
+  /* Projects Section */
+  #projects .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .project-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-card h3 {
+    margin-bottom: 10px;
+    color: #3b5998;
+  }
+  
+  .project-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00bcd4; /* Soft Teal */
+    transition: color 0.3s ease;
+  }
+  
+  .project-link:hover {
+    color: #ff7043; /* Light Coral */
+  }
+  
+  /* Skills Section */
+  #skills .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .skill {
+    display: flex;
+    flex-direction: column;
+    color: #333;
+  }
+  
+  .skill-bar {
+    height: 8px;
+    background-color: #00bcd4;
+    margin-top: 5px;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+  }
+  
+  .skill-bar:hover {
+    background-color: #ff7043; /* Light Coral */
+  }
+  
+  /* Contact Section */
+  #contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #contact input, #contact textarea {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  #contact .social-links {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #contact .social-links a {
+    margin: 0 10px;
+    color: #3b5998;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  #contact .social-links a:hover {
+    color: #00bcd4; /* Soft Teal */
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #3b5998;
+    color: white;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      gap: 15px;
+    }
+    .about-content {
+      flex-direction: column;
+    }
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  /* Floating Social Links */
+.social-floating {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 999;
+  }
+  
+  .social-icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #3b5998; /* Deep Blue */
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .social-icon i {
+    font-size: 20px;
+    line-height: 50px;
+  }
+  
+  .social-icon:hover {
+    background-color: #00bcd4; /* Soft Teal */
+    transform: scale(1.1);
+  }
+  
+  /* Specific styles for LinkedIn and Email */
+  .social-icon.linkedin {
+    background-color: #0077b5; /* LinkedIn Blue */
+  }
+  
+  .social-icon.email {
+    background-color: #ff7043; /* Light Coral for Email */
+  }
+  
+  .social-icon:hover.linkedin {
+    background-color: #00bcd4; /* Soft Teal */
+  }
+  
+  .social-icon:hover.email {
+    background-color: #ff7043; /* Light Coral */
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .social-floating {
+      top: 80%;
+      right: 10px;
+    }
+  }
+  
+  
